@@ -1,4 +1,4 @@
-# TutorialViewBinding
+# Tutorial ViewBinding
  Tutorial basico do ViewBinding
 
 A vinculação de visualizações é um recurso que facilita a programação de códigos que interagem com visualizações. Quando a vinculação de visualizações é ativada em um módulo, ela gera uma classe de vinculação para cada arquivo de layout XML presente nesse módulo. A instância de uma classe de vinculação contém referências diretas a todas as visualizações que têm um código no layout correspondente.
