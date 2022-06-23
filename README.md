@@ -10,14 +10,17 @@ Observação: a vinculação de visualizações está disponível no Android Stu
 A vinculação de visualizações é ativada em um módulo por base de módulo. Para ativar a vinculação de visualizações em um módulo, adicione o elemento viewBinding ao arquivo build.gradle dele, conforme mostrado no exemplo a seguir:
 
 
-android {
+ android {
         ...
         viewBinding {
             enabled = true
         }
     }
     
+
+
 Caso você queira que um arquivo de layout seja ignorado ao gerar classes de vinculação, adicione o atributo tools:viewBindingIgnore="true" à visualização raiz do arquivo de layout:
+
 
 
 <LinearLayout
@@ -26,6 +29,8 @@ Caso você queira que um arquivo de layout seja ignorado ao gerar classes de vin
         ...
     </LinearLayout>
     
+
+
 Uso
 Se a vinculação de visualizações estiver ativada para um módulo, uma classe de vinculação será gerada para cada arquivo de layout XML que ele contiver. Cada classe de vinculação contém referências à visualização raiz e a todas as visualizações que têm um código. O nome da classe de vinculação é gerado por meio da conversão do nome do arquivo XML em minúsculas concatenadas e da adição da palavra "Binding" ao final.
 
